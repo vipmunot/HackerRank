@@ -1,0 +1,5 @@
+n = int(input())
+height = list(map(int,input().strip(" ").split()))
+distinct = set(height)
+average = sum(distinct)/len(distinct)
+print(average)
