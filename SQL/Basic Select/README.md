@@ -1,16 +1,16 @@
-Revising the Select Query I 
+### Revising the Select Query I 
 
 select * from CITY where COUNTRYCODE = 'USA' and POPULATION >100000
 
-Revising the Select Query II
+### Revising the Select Query II
 
 select name from CITY where COUNTRYCODE = 'USA' and POPULATION >120000
 
-Select All
+### Select All
 
 select * from city
 
-Select By ID 
+### Select By ID 
 
 select * from city where ID = 1661
 
