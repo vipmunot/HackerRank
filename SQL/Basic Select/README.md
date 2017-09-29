@@ -67,3 +67,15 @@ select distinct city from station where city rlike '[^aeiou]$' or city rlike '^[
 ### Weather Observation Station 12
 
 select distinct city from station where city rlike '[^aeiou]$' and city rlike '^[^aeiou]'
+
+### Higher Than 75 Marks
+
+select name from students where marks > 75 order by RIGHT(NAME, 3), id asc
+
+### Employee Names
+
+select name from employee order by name
+
+### Employee Salaries
+
+select name from employee where salary > 2000 and months < 10 order by employee_id
