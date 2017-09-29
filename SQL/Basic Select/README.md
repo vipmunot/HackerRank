@@ -41,7 +41,9 @@ SELECT MIN(CITY),LENGTH(CITY) FROM STATION GROUP BY LENGTH(CITY) ORDER BY LENGTH
 ### Weather Observation Station 6
 ```sql
 select distinct city from station where city like 'a%' or city like 'e%' or city like 'i%' or city like 'o%' or city like 'u%'
-<br>select distinct CITY from STATION where CITY RLIKE '^[AEIOU]'
+```
+```sql
+select distinct CITY from STATION where CITY RLIKE '^[AEIOU]'
 ```
 ### Weather Observation Station 7
 ```sql
@@ -54,7 +56,9 @@ select distinct city from station where city rlike '^[aeiou]' and city rlike '[a
 ### Weather Observation Station 9
 ```sql
 select distinct city from station where city not in (select distinct city from station where city rlike '^[aeiou]')
-<br>select distinct city from station where city rlike '^[^aeiou]'
+```
+```sql
+select distinct city from station where city rlike '^[^aeiou]'
 ```
 ### Weather Observation Station 10
 ```sql
